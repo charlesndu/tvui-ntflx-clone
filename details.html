@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script type="module">
+      import { getTitleInfo, renderDetails } from "./app.js";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        const titleInfo = getTitleInfo();
+        renderDetails(titleInfo.id, titleInfo.title);
+      });
+    </script>
+    <div id="details">
+      <div id="focusedAsset">
+        <div id="videoTitle">
+          <p id="titleText"></p>
+        </div>
+        <div id="videoDisplayArt"></div>
+      </div>
+      <div id="navigation">
+        <a
+          href="#"
+          class="button"
+          id="play"
+          onclick="event.preventDefault()"
+          tabindex="1"
+          >Play</a
+        >
+        <a
+          href="#"
+          class="button"
+          id="back"
+          onclick="event.preventDefault()"
+          tabindex="1"
+          >Back</a
+        >
+        <a
+          href="#"
+          class="button"
+          id="rate"
+          onclick="event.preventDefault()"
+          tabindex="1"
+          >Rate</a
+        >
+        <a
+          href="#"
+          class="button"
+          id="episodes"
+          onclick="event.preventDefault()"
+          tabindex="1"
+          >Episodes</a
+        >
+      </div>
+    </div>
+  </body>
+</html>

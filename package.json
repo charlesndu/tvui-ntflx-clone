@@ -1,0 +1,14 @@
+{
+    "name": "netflix_tv_ui_applicant_exercise",
+    "version": "2.2.0",
+    "description": "",
+    "main": "index.js",
+    "private": true,
+    "scripts": {
+        "start": "serve -c serve.json"
+    },
+    "author": "",
+    "devDependencies": {
+        "serve": "^11.0.0"
+    }
+}

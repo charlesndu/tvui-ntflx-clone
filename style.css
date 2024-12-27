@@ -1,0 +1,91 @@
+/**
+ * Global styles
+ */
+html,
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  pointer-events: none;
+}
+
+/* Browse Page */
+
+.video {
+  border: solid 3px #070707;
+  display: inline-block;
+  margin: 0 3vw 20px 0;
+  height: 7.5vw;
+}
+
+.video:focus {
+  border: solid 3px white;
+  outline: none;
+}
+
+.video:last-child {
+  margin-right: 0;
+}
+
+#videoListRows {
+  padding: 0 60px;
+  margin-top: -35px;
+  position: relative;
+}
+
+.rowTitle {
+  font-weight: 300;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+/* Details Page */
+
+#navigation {
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px;
+  margin-top: -35px;
+}
+
+#navigation a {
+  border: solid 2px black;
+  padding: 7px 10px;
+  width: 200px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+#navigation a:focus {
+  border: solid 2px white;
+  outline: none;
+}
+
+/* Shared */
+
+#focusedAsset {
+  display: flex;
+  height: 33vw;
+}
+
+#videoTitle {
+  width: 70%;
+}
+
+#videoTitle #titleText {
+  font-size: 28px;
+  font-weight: 300;
+  padding: 25px 60px;
+}
+
+#videoDisplayArt {
+  width: 100%;
+  background-color: #444;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* Webkit reflect */
+  -webkit-box-reflect: below 0 -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.25)), color-stop(0.3, transparent));
+}
